@@ -1,83 +1,110 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100&family=Doto:wght@100..900&display=swap" rel="stylesheet">
+    <title>Nicole Oszczypala's Portfolio</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Geist Mono', sans-serif;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        h1, h2, h3 {
+            margin: 20px 0;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .center-text {
+            text-align: center;
+        }
+        .prog {
+            color: green;
+            font-family: 'Doto', sans-serif;
+            font-weight: 700;
+        }
+        .adob {
+            color: hotpink;
+            font-family: 'Doto', sans-serif;
+            font-weight: 700;
+        }
+        .poppins-thin {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 100;
+        }
 
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100&display=swap" rel="stylesheet">
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            padding: 0;
+        }
 
+        table th, table td {
+            padding: 10px;
+            border: 1px solid white;
+            text-align: center;
+        }
 
-<title>Nicole Oszczypala's Portfolio</title>
-<style> 
+        table th, table td {
+            padding: 15px;
+        }
 
-    body {
-        background-color: black;
-    	color: white;
-    	font-family: 'Geist Mono', sans-serif;
-    }
-    table {
-        width: 100%;
-    }
-    .center-text {
-        text-align: center;
-    }
+        @media (max-width: 768px) {
+            table th, table td {
+                font-size: 14px;
+            }
 
-	.prog {
-    	color:green;
-  		font-family: "Doto", sans-serif;
-  		font-optical-sizing: auto;
-  		font-weight: 700;
-  		font-style: normal;
-  		font-variation-settings:
-    	"ROND" 0;
-	}
-    .adob {
-    	color: hotpink;
-  		font-family: "Doto", sans-serif;
-  		font-optical-sizing: auto;
-  		font-weight: 700;
-  		font-style: normal;
-  		font-variation-settings:
-    	"ROND" 0;
-	}
-    .poppins-thin {
-  font-family: "Poppins", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-}
+            body {
+                padding: 15px;
+            }
+        }
 
-</style>
+        footer {
+            text-align: center;
+            font-size: 12px;
+            margin-top: 40px;
+            color: #888;
+        }
+    </style>
 </head>
 <body>
 
-<div class="center-text">
+<header class="center-text">
     <h1>Nicole Oszczypala</h1>
     <p>August 2024 Portfolio</p>
     <h2 class="prog">Programming</h2>
-</div>
+</header>
 
-<h3 color="white"> Game Library </h3>
-<br>
-<h3>Interactive Solar System</h3>
-<iframe src="https://editor.p5js.org/njoszczy/full/vn0jbvvRt" width=100% height="800"></iframe>
-<br>
-<h3>Ghost Catcher Game</h3>
-<a href="https://editor.p5js.org/njoszczy/full/TX0UM-krp" target="_blank">Link to play in a new tab</a>
-<p> These interactive experiences make use of geometry, WEBGL, object oriented programming, and data structures. <br> Both were made in P5.js in Java.</p>
-<br>
-<div class="center-text">
+<section>
+    <h3 class="center-text">Game Library</h3>
+    <h3 class="center-text">Interactive Solar System</h3>
+    <iframe src="https://editor.p5js.org/njoszczy/full/vn0jbvvRt" width="100%" height="800"></iframe>
+
+    <h3 class="center-text">Ghost Catcher Game</h3>
+    <a href="https://editor.p5js.org/njoszczy/full/TX0UM-krp" target="_blank">Link to play in a new tab</a>
+    <p>These interactive experiences make use of geometry, WEBGL, object-oriented programming, and data structures. Both were made in P5.js using Java.</p>
+</section>
+
+<section class="center-text">
     <h2 class="adob">Adobe Creative Cloud</h2>
     <h3>After Effects</h3>
-</div>
-<div class="center-text">
-<h3>Photoshop</h3>
-</div>
+    <h3>Photoshop</h3>
+</section>
+
 <table>
     <thead>
         <tr>
@@ -87,28 +114,30 @@
     </thead>
     <tbody>
         <tr>
-            <td><img src="Images/HARRIS BEFORE.JPG" alt="Photographed Harris" width="600"></td>
-            <td><img src="Images/HARRIS AFTER.png" alt="Photoshopped Harris" width="600"></td>
+            <td><img src="Images/HARRIS BEFORE.JPG" alt="Photographed Harris"></td>
+            <td><img src="Images/HARRIS AFTER.png" alt="Photoshopped Harris"></td>
         </tr>
         <tr>
-            <td><img src="Images/CAMERON BEFORE.JPG" alt="Photographed Cameron" width="600"></td>
-            <td><img src="Images/CAMERON AFTER.png" alt="Photoshopped Cameron" width="600"></td>
+            <td><img src="Images/CAMERON BEFORE.JPG" alt="Photographed Cameron"></td>
+            <td><img src="Images/CAMERON AFTER.png" alt="Photoshopped Cameron"></td>
         </tr>
         <tr>
-            <td><img src="Images/OLIVIA BEFORE.JPG" alt="Photographed Olivia" width="600"></td>
-            <td><img src="Images/OLIVIA AFTER.png" alt="Photoshopped Olivia" width="600"></td>
+            <td><img src="Images/OLIVIA BEFORE.JPG" alt="Photographed Olivia"></td>
+            <td><img src="Images/OLIVIA AFTER.png" alt="Photoshopped Olivia"></td>
         </tr>
         <tr>
-            <td><img src="Images/NICOLE BEFORE.JPG" alt="Photographed Nicole" width="600"></td>
-            <td><img src="Images/NICOLE AFTER.png" alt="Photoshopped Nicole" width="600"></td>
+            <td><img src="Images/NICOLE BEFORE.JPG" alt="Photographed Nicole"></td>
+            <td><img src="Images/NICOLE AFTER.png" alt="Photoshopped Nicole"></td>
         </tr>
     </tbody>
 </table>
-<br>
-<img src="Images/Double Exposure.jpg" alt="A Double Exposure Image" width="600" height="421">
 
-<p>Copyright 2024 The Doto Project Authors (https://github.com/oliverlalan/Doto) </p>
-<p>Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)</p>
+<img src="Images/Double Exposure.jpg" alt="A Double Exposure Image">
+
+<footer>
+    <p>Copyright 2024 The Doto Project Authors (https://github.com/oliverlalan/Doto)</p>
+    <p>Copyright 2024 The Geist Project Authors (https://github.com/vercel/geist-font.git)</p>
+</footer>
+
 </body>
 </html>
-
